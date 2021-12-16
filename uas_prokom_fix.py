@@ -56,7 +56,6 @@ for i in list(dataframe_gabungan['tahun']) :
 
 B = st.number_input("Banyak Negara", min_value = 1, max_value = 99)
 T = st.selectbox("Tahun", list_tahun)
-T = int(T)
 
 left_col2, right_col2 = st.columns(2)
 
