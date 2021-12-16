@@ -6,6 +6,7 @@ import streamlit as st
 
 #title
 st.set_page_config(layout="wide")  # this needs to be the first Streamlit command called
+st.set_option('deprecation.showPyplotGlobalUse', False)
 st.title("Statistik Produksi Minyak Mentah")
 st.image("https://www.treehugger.com/thmb/vELzc83oZZa8XjFv7voHb5jBAuY=/667x667/smart/filters:no_upscale()/__opt__aboutcom__coeus__resources__content_migration__mnn__images__2010__05__shutterstock_680239339-67a685cc223f41778a8009fef2bcbbc3.jpg")
 
