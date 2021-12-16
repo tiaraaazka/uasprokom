@@ -113,7 +113,7 @@ for i in range(len(dataframe_kumulatifnegara)) :
 
 dataframe_kumulatifnegaralengkap = pd.DataFrame(list(zip(list_kodenegara, list_namanegara, list_jumlahkumulatif, list_regionnegara, list_subregionnegara)), columns=['kode_negara', 'nama_negara', 'jumlah_kumulatif', 'region', 'sub-region'])
 
-T2 = st.selectbox("Tahun", list_tahun)
+T2 = st.slider("Tahun", min_value=1971, max_value=2015)
 
 left_col4, right_col4 = st.columns(2)
 
