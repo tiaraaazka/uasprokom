@@ -73,7 +73,7 @@ with left_col2 :
 dataframe_jumlahproduksibaru.plot.bar(x='nama_negara', y='produksi', color='red', title='Grafik Beberapa Negara dengan Jumlah Produksi Terbesar pada Suatu Tahun')
 grafikbagian_b = plt.show()
 with right_col2 :
-    st.subheader("Grafik Jumlah Produksi terhadap Tahun dari Suatu Negara")
+    st.subheader("Grafik Beberapa Negara dengan Jumlah Produksi Terbesar pada Suatu Tahun")
     st.pyplot(grafikbagian_b)
 
 #nomor c
