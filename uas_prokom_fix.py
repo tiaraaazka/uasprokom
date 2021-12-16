@@ -54,7 +54,8 @@ for i in list(dataframe_gabungan['tahun']) :
     if i not in list_tahun :
         list_tahun.append(i)
 
-B = st.number_input("Banyak Negara", min_value = 1, max_value = 99)
+B = st.slider("Banyak Negara", min_value = 1, max_value = 99)
+B = int(B)
 T = st.selectbox("Tahun", list_tahun)
 
 left_col2, right_col2 = st.columns(2)
@@ -75,7 +76,8 @@ with right_col2 :
     st.pyplot(grafikbagian_b)
 
 #nomor c
-B2 = st.number_input("Banyak Negara", min_value = 1, max_value = 100)
+B2 = st.slider("Banyak Negara", min_value = 1, max_value = 100)
+B2 = int(B2)
 
 list_jumlahkumulatif = []
 for i in list_namanegara :
@@ -114,6 +116,7 @@ for i in range(len(dataframe_kumulatifnegara)) :
 dataframe_kumulatifnegaralengkap = pd.DataFrame(list(zip(list_kodenegara, list_namanegara, list_jumlahkumulatif, list_regionnegara, list_subregionnegara)), columns=['kode_negara', 'nama_negara', 'jumlah_kumulatif', 'region', 'sub-region'])
 
 T2 = st.slider("Tahun", min_value=1971, max_value=2015)
+T2 = int(T2)
 
 left_col4, right_col4 = st.columns(2)
 
