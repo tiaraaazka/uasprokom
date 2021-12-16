@@ -75,7 +75,7 @@ with right_col2 :
     st.pyplot(grafikbagian_b)
 
 #nomor c
-B2 = st.number_input("Banyak Negara", min_value = 1, max_value = None)
+B2 = st.number_input("Banyak Negara", min_value = 1, max_value = 100)
 
 list_jumlahkumulatif = []
 for i in list_namanegara :
